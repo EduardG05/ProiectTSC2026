@@ -31,8 +31,19 @@ conectarea prin via stitching
 DRC check
 corectarea erorilor critice
 
-# Diagrama bloc
 
+# BOM
+| Componenta         | Tip      | Sursa | Datasheet |
+| ------------------ | -------- | ----- | --------- |
+| Microcontroller    | MCU      | JLC   | Datasheet |
+| Senzori            | Senzori  | JLC   | Datasheet |
+| Regulator tensiune | Power    | JLC   | Datasheet |
+| USB Connector      | Conector | JLC   | Datasheet |
+| Condensatori       | Pasivi   | JLC   | Datasheet |
+| Rezistente         | Pasivi   | JLC   | Datasheet |
+
+
+# Diagrama bloc
 
 #Componente principale:
 Microcontroller (unitatea centrala)
@@ -40,6 +51,7 @@ Senzori / periferice
 Modul comunicatie (SPI / I2C / UART)
 Sistem alimentare
 USB (alimentare + debug)
+
 
 # Conectari:
 
