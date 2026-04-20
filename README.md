@@ -3,14 +3,14 @@
 # InkTime Smartwatch PCB
 
 
-#Descriere generala
+# Descriere generala
 
 Proiectul consta in realizarea unei scheme electronice si a unui PCB pentru un sistem embedded compact, utilizand Autodesk Fusion 360 Electronics.
 
 Scopul a fost integrarea componentelor hardware necesare (microcontroller, interfete de comunicatie, alimentare si periferice) pe o placa compacta, respectand constrangerile electrice, mecanice si regulile de good practice impuse in cadrul laboratorului.
 
 
-#Pasii de implementare
+# Pasii de implementare
 !. Analiza cerintei si a schemei date
 identificarea componentelor principale
 intelegerea conexiunilor dintre module
@@ -31,7 +31,7 @@ conectarea prin via stitching
 DRC check
 corectarea erorilor critice
 
-#Diagrama bloc
+# Diagrama bloc
 
 
 #Componente principale:
@@ -41,7 +41,7 @@ Modul comunicatie (SPI / I2C / UART)
 Sistem alimentare
 USB (alimentare + debug)
 
-#Conectari:
+# Conectari:
 
 I2C pentru senzori
 SPI pentru periferice rapide
@@ -49,7 +49,7 @@ UART pentru debug
 Alimentare distribuita prin regulator
 
 
-#Functionalitate hardware
+# Functionalitate hardware
 
 Microcontroller-ul gestioneaza toate interfetele si perifericele.
 
@@ -60,16 +60,16 @@ Debug → UART
 Alimentarea este realizata prin USB sau sursa externa si distribuita catre toate modulele prin circuitul de power.
 
 
-#Layout PCB
+# Layout PCB
 
-#PCB-ul a fost realizat pe 4 layere:
+# PCB-ul a fost realizat pe 4 layere:
 
 TOP: componente + rutare principala + ground
 BOTTOM: cablare componente
 ROUTE2: -
 ROUTE63: in principal cabluri pentru power
 
-#Reguli respectate:
+# Reguli respectate:
 trasee de putere mai groase
 trasee de semnal = 0.15 mm
 fara unghiuri de 90°
@@ -78,7 +78,7 @@ verificare DRC
 plasare componente strategic
 
 
-#Probleme intampinate
+# Probleme intampinate
 erori DRC
 spatiu limitat pentru rutare
 trasee apropiate in zone aglomerate
@@ -94,7 +94,7 @@ adaugarea planurilor de masa
 modificarea pozitiei componentelor
 
 
-#Decizii de design
+# Decizii de design
 
 Conform cerintelor proiectului, au fost luate urmatoarele decizii:
 
@@ -106,8 +106,12 @@ layout-ul a fost optimizat pentru spatiu, nu perfect simetric
 
 Aceste decizii au fost necesare pentru a finaliza design-ul fara a compromite functionalitatea.
 
+# Hardware
 
-#Mechanical
+Schematicul si PCB2D
+
+
+# Mechanical
 
 Modelul 3D include:
 PCB
@@ -116,7 +120,7 @@ display
 carcasa
 
 
-#Images
+# Images
 
 imagini ale placutei 2D si 3D plus poze cu componentele asamblate si exploded
 
